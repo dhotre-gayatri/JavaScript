@@ -12,7 +12,7 @@ console.log(account_email);
 account_password = "456280"
 console.log(account_password);
 
-account_city = "Pune"
+account_city = "Chennai"
 console.log(account_city);
 
 console.table([account_id,account_email,account_password,account_city,accoutn_state]); // console.table([]);---> gives output in table format
