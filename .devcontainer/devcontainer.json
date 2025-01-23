@@ -19,7 +19,9 @@
 				"wayou.vscode-todo-highlight"
 			],
 			"settings": {
-				"workbench.colorTheme": "Rosely Light"
+				"workbench.colorTheme": "Lotus Theme",
+				"workbench.productIconTheme": "material-product-icons",
+				"workbench.fileIconTheme": "seti-icons"
 			}
 			
 		}
