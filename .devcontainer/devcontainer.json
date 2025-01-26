@@ -23,7 +23,7 @@
                 "DavidAnson.vscode-markdownlint"
             ],
 			"settings": {
-				"workbench.colorTheme": "Lotus Theme",
+				"workbench.colorTheme":"Lotus Dark" ,
 				"workbench.productIconTheme": "material-product-icons",
 				"workbench.fileIconTheme": "seti-icons"
 			}
