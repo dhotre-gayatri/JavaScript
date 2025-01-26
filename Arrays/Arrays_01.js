@@ -61,4 +61,48 @@ console.log(" B : ", my_arr_1); // original array from 0 to 7
 const my2 = my_arr_1.splice(1,4) // slice and split the array here it gives o/p from index 1 to 4 
 console.log(my2);
 
-console.log(" c : ", my_arr_1); // original array is slplited because of splice() and it will give o/p as remaingin elements of the arrayt
+console.log(" c : ", my_arr_1); // original array is slplited because of splice() and it will give o/p as remaingin elements of the array
+
+
+// more discussion on array
+ const marvel_heros_1 =  ["Iron-Man", "Thor", "Captain-America", "Natasha"]
+ const heros = ["Ell", "Dustin", "Will", "Hopper", "Max"]
+
+// // what will o/p if we directly push heros to marvel heros ----> expected o/p is array inside array
+// marvel_heros_1.push(heros) // it means that heros array is an single element for marvel array
+// console.log(marvel_heros_1);
+// console.log(marvel_heros_1[4]);
+
+
+// let new_01 = marvel_heros_1.concat(heros) // Combines two or more arrays. This method returns a new array without modifying any existing arrays.
+// console.log(new_01);
+
+
+// to spread out all the element from bothe array we use ...(dot dot dot) ----> ...marvel_heroes_1, ...heroes
+let new_02 = [...marvel_heros_1, ...heros]
+console.log(new_02);
+
+
+const another_arr = [1,2,3,[4,5,6],7,[8,9,[10,11]]]
+const new_03 = another_arr.flat(0)
+console.log(new_03);
+const new_04 = another_arr.flat(1)
+console.log(new_04);
+const new_05 = another_arr.flat(2)
+console.log(new_05);
+
+
+//isArray(variable_name OR element) ---> to check whether given variable_name or element is array or not
+console.log(Array.isArray(marvel_heros_1));
+
+
+console.log(Array.from("Gayatri"));// An iterable object to convert to an array......Creates an array from an iterable object.
+
+console.log(Array.from({name : "Gayatri"})); // intresting for inteviews
+
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1,score2,score3)); // Returns a new array from a set of elements.
