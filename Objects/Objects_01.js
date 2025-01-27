@@ -30,6 +30,6 @@ console.log(new_literal_obj_2);
 console.log(new_literal_obj_2[new_symbol]);
 
 // we can freeze an object so that whatever changes we will do with keys and values it will not reflect to the object
-//Object.freeze(new_literal_obj_1) // Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
+Object.freeze(new_literal_obj_1) // Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
 
 
