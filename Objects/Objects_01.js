@@ -33,3 +33,18 @@ console.log(new_literal_obj_2[new_symbol]);
 Object.freeze(new_literal_obj_1) // Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
 
 
+// adding function in object
+
+const new_literal_object_3 = {
+    name : "Gayatri",
+    age : 18,
+    email : "gayatridhotre@gmail.com",
+    is_logged_in : true,
+    last_login_days : ["Monday", "Friday"],
+    "Full Name" : "Gayatri DHotre"
+}
+new_literal_object_3.new_funtion_1 = function(){
+    console.log(`Hello Everyone my name is ${this.name}`);
+    
+}
+console.log(new_literal_object_3.new_funtion_1()); // accessing the function of an object
